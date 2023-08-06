@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+label, select {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.rating {
+    font-size: 0;
+    margin-top: 20px;
+}
+
+.star {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/estrela_empty.png'); /* Caminho para a imagem de estrela vazia */
+    background-size: cover;
+    transition: background-image 0.2s;
+}
+
+.star-filled {
+    background-image: url('../img/estrela_full.png'); /* Caminho para a imagem de estrela preenchida */
+    background-size: cover;
+}
