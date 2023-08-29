@@ -1,0 +1,49 @@
+.data {
+    display: flex;
+    justify-content: center;
+
+    height: 16px;
+    padding: 8px;
+
+    border-bottom: 1px solid var(--cor-contorno);
+    background-color: var(--cor-branco);
+    border-radius: 20px 20px 0 0;
+}
+
+.data a {
+    margin: 0 .5em;
+}
+
+.tabela__container {
+    padding: 0 8px;
+    height: 100%;
+
+    display: grid;
+    gap: 32px;
+}
+
+.exportar__dados {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 1 / 4;
+    grid-row: 64px;
+
+    padding: 1em;
+    height: fit-content;
+}
+
+.exportar__dados a {
+    background-color: var(--cor-azul);
+    border-radius: 5px;
+
+    color: var(--cor-branco);
+    font-size: 14px;
+
+    padding: .5em;
+}
+
+.exportar__dados a:hover {
+    color: var(--cor-branco);
+    text-decoration: underline;
+}
+

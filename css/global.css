@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+@import url('./reset.css');
+@import url('./app.css');
+@import url('./estrutura.css');
+@import url('./tabela-insights.css');
+
+
+
+
+:root {
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-azul: #37295a;
+    --cor-contorno: #E9E9EA;
+
+    --background: linear-gradient(to bottom right, rgb(37, 37, 51), rgb(40, 40, 65), rgb(47, 51, 85));
+
+    
+    --fonte-primaria: 'Lato', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background) no-repeat;
+    font-family: var(--fonte-primaria);
+}

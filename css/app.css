@@ -1,0 +1,38 @@
+.app {
+    max-width: 1366px;
+
+    margin: 0 auto 64px;
+    padding: 0 24px;
+
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    gap: 32px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-branco);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+main {
+    background-color: #F8FAFC;
+    border-radius: 20px;
+
+}
+
+main div a {
+    text-decoration: none;
+    color: var(--cor-preto);
+}
+
+main div a:hover {
+    color: var(--cor-azul);
+}
+
+main div a:active {
+    color: var(--cor-preto);
+}

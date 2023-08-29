@@ -1,0 +1,19 @@
+.display__insights {
+    border: 1px solid var(--cor-contorno);
+    border-radius: 10px;
+    background-color: var(--cor-branco); 
+    padding: .5em;
+}
+
+.peso {
+    grid-column: 1 ;
+}
+
+.estrelas {
+    grid-column: 2 ;
+}
+
+.estrelas__semana {
+    grid-column: 3 ;
+}
+

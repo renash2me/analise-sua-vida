@@ -1,71 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saúde - Analise sua vida - by Renato Zambelli</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Insights de Saúde</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <h1>Preencha os dados para obter sua pontuação</h1>
+    <div class="app">
+        <h1>Físico</h1>
+        <main>
+            <div class="data">
+                <a href="#"><i class="ph ph-arrow-left"></i></a>
+                <p>Agosto/2023</p>
+                <a href="#"><i class="ph ph-arrow-right"></i></a>
+            </div>
 
-    <form id="ratingForm">
-        <label for="q1">Pergunta 1: Você gostou da experiência?</label>
-        <select id="q1" name="q1">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
-        
-        <label for="q2">Pergunta 2: Você recomendaria?</label>
-        <select id="q2" name="q2">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
+            <div class="exportar__dados">
+                <a href="#"><i class="ph ph-file-arrow-down"></i> Exportar</a>
+            </div>
 
-        <label for="q3">Pergunta 3: Você recomendaria?</label>
-        <select id="q3" name="q3">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
-
-        <label for="q4">Pergunta 4: Você recomendaria?</label>
-        <select id="q4" name="q4">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
-
-        <label for="q5">Pergunta 5: Você recomendaria?</label>
-        <select id="q5" name="q5">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
-
-        <label for="q6">Pergunta 6: Você recomendaria?</label>
-        <select id="q6" name="q6">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
-
-        <label for="q7">Pergunta 7: Você recomendaria?</label>
-        <select id="q7" name="q7">
-            <option value="nao">Não</option>
-            <option value="sim">Sim</option>
-        </select>
-
-        <!-- Adicione mais perguntas conforme necessário... -->
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <div class="rating">
-        <span class="star"></span>
-        <span class="star"></span>
-        <span class="star"></span>
-        <span class="star"></span>
-        <span class="star"></span>
+            <div class="tabela__container">
+                <div class="display__insights peso">sadsa</div>
+                <div class="display__insights estrelas">sadsa</div>
+                <div class="display__insights estrelas__semana">sadsa</div>
+                <div class=""></div>
+            </div>
+        </main>
     </div>
-    <p class="result">Classificação: <span id="ratingValue">0</span></p>
-
-    <script src="./js/main.js"></script>
 </body>
 </html>
