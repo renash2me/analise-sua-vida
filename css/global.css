@@ -12,12 +12,17 @@
     --cor-preto: #000000;
     --cor-azul: #37295a;
     --cor-contorno: #E9E9EA;
+    --positivo: rgba(0, 255, 119, 0.215);
+    --negativo: ;
+    --manteve: ;
 
-    --background: linear-gradient(to bottom right, rgb(37, 37, 51), rgb(40, 40, 65), rgb(47, 51, 85));
+    --positivo-borda: rgba(0, 255, 119);
+    --negativo-borda: ;
+    --manteve-borda: ;
 
-    
     --fonte-primaria: 'Lato', sans-serif;
 
+    --background: linear-gradient(to bottom right, rgb(37, 37, 51), rgb(40, 40, 65), rgb(47, 51, 85));
 }
 
 html {

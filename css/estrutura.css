@@ -14,18 +14,23 @@
     margin: 0 .5em;
 }
 
+.data p {
+    font-weight: 600;
+}
+
 .tabela__container {
     padding: 0 8px;
     height: 100%;
 
     display: grid;
     gap: 32px;
+    margin: 16px;
 }
 
 .exportar__dados {
     display: flex;
     justify-content: flex-end;
-    grid-column: 1 / 4;
+    grid-column: 4;
     grid-row: 64px;
 
     padding: 1em;

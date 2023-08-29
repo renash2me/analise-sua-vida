@@ -1,19 +1,65 @@
 .display__insights {
+    background-color: var(--cor-branco); 
     border: 1px solid var(--cor-contorno);
     border-radius: 10px;
-    background-color: var(--cor-branco); 
-    padding: .5em;
+    padding: 0 1em;
+}
+
+.display__insights p {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .peso {
     grid-column: 1 ;
+    display: flex;
+    align-items: center;
 }
 
-.estrelas {
+.peso div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.peso h2 {
+    margin-bottom: .5em;
+}
+
+.peso i {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+
+    margin-right: .5em;
+    padding: .5em;
+
+    font-size: 48px;
+
+    background-color: var(--positivo);
+    border: 1px solid var(--positivo-borda);
+    border-radius: 10px;
+}
+
+.estrelas__semana, .estrelas__mes {
     grid-column: 2 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.estrelas__semana {
+.estrelas__semana h2, .estrelas__mes h2 {
+    margin-bottom: .5em;
+}
+
+.display__insights .ph-star, .ph-star-half{
+    color: goldenrod;
+    font-size: 28px;
+}
+
+.estrelas__mes {
     grid-column: 3 ;
 }
 
