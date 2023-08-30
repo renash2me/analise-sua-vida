@@ -1,6 +1,5 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,12 +41,12 @@ button {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url('../img/estrela_empty.png'); /* Caminho para a imagem de estrela vazia */
+    background-image: url('../assets/img/estrela_empty.png'); /* Caminho para a imagem de estrela vazia */
     background-size: cover;
     transition: background-image 0.2s;
 }
 
 .star-filled {
-    background-image: url('../img/estrela_full.png'); /* Caminho para a imagem de estrela preenchida */
+    background-image: url('../assets/img/estrela_full.png'); /* Caminho para a imagem de estrela preenchida */
     background-size: cover;
 }
