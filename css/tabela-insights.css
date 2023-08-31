@@ -35,7 +35,7 @@
     margin-right: .5em;
     padding: .5em;
 
-    font-size: 48px;
+    font-size: 28px;
 
     background-color: var(--positivo);
     border: 1px solid var(--positivo-borda);
@@ -48,6 +48,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.estrelas__semana div, .estrelas__mes div {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .estrelas__semana h2, .estrelas__mes h2 {

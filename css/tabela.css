@@ -1,0 +1,47 @@
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+
+}
+
+/* .tabela__tools {
+
+} */
+
+table th {
+    border: 1px solid;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+table td {
+    border: 1px solid;
+    text-align: center;
+    font-size: 14px;
+}
+
+table select {
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+}
+
+table select option {
+    font-size: 14px;
+}
+
+.botao-salvar {
+
+    background-color: var(--cor-azul);
+    border-radius: 10px;
+
+    color: var(--cor-branco);
+    font-family: var(--fonte-primaria);
+
+    padding: .5em;
+}
+
