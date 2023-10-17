@@ -135,4 +135,8 @@ h3 i{
     main {
         min-height: 92vh;
     }
+
+    .log__window__body {
+        grid-template-columns: 1fr;
+    }
 }
