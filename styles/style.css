@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap');
+@import url(./reset.css);
+@import url(./log.css);
+@import url(./checkbox.css);
+
+:root {
+    --fonte-principal: 'Poppins', sans-serif;
+
+    --cor-branco: #FEFEFE;
+    --cor-escura: #3D4956;
+    --cor-destaque: #00DFCA;
+    --cor-bg: #1E2A3C;
+
+}
+
+body {
+    background-color: var(--cor-bg);
+    color: var(--cor-branco);
+    font-family: var(--fonte-principal);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h1 strong {
+    color: var(--cor-destaque);
+}
+
+.pilares {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 40%;
+
+    text-transform: uppercase;
+}
+
+.pilares div {
+    text-align: center;
+
+    
+    border-radius: 10px;
+    padding: .5em;
+    background-color: transparent;
+    color: var(--cor-destaque);
+}
+
+.pilares div a {
+    color: var(--cor-destaque);
+}
+
+.pilares div a:hover {
+    color: var(--cor-branco);
+}
+
+.pilares i {
+    font-size: 48px;
+}

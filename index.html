@@ -4,165 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insights de Saúde</title>
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
-    <!-- Linkando jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-      <!-- Adicionando link para o arquivo CSS do TableSorter via CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.default.min.css">
-    <!-- Adicionando TableSorter via CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
-
 </head>
 <body>
-    <div class="app">
-        <h1>Físico</h1>
-        <main>
-            <div class="data">
-                <a href="#"><i class="ph ph-arrow-left"></i></a>
-                <p>Agosto/2023</p>
-                <a href="#"><i class="ph ph-arrow-right"></i></a>
+    <div class="hero">
+        <h1>Conheça sua <strong>Saúde</strong></h1>
+        <p>Esse é um sistema criado para trazer insights sobre a sua saúde.</p>
+        <p>Ele foi criado com base nos 6 pilares conhecidos para ter uma vida mais saudável, são eles:</p>
+        <div class="pilares">
+            <div><a href="#"><i class="ph-fill ph-orange-slice">
+                </i><h3>Alimentação Saudável</h3></a>
             </div>
-
-            <div>
-                <div class="exportar__dados">
-                    <a href="#"><i class="ph ph-file-arrow-down"></i> Exportar</a>
-                </div>
-    
-                <div class="tabela__container">
-                    <div class="display__insights peso">
-                        <i class="ph ph-gauge"></i>
-                        <div>
-                            <h2>Peso Atual</h2>
-                            <p class="display__info-insight">87,40 Kg</p>
-                        </div>
-                    </div>
-                    <div class="display__insights estrelas__semana">
-                        <h2>Classificação na semana</h2>
-                        <div>
-                            <i id="estrela-1" class="ph-fill ph-star"></i>
-                            <i id="estrela-2" class="ph-fill ph-star"></i>
-                            <i id="estrela-3" class="ph-fill ph-star"></i>
-                            <i id="estrela-4" class="ph-fill ph-star-half"></i>
-                            <i id="estrela-5" class="ph ph-star"></i>
-                        </div>
-                        <p class="display__info-insight">3,19</p>
-                    </div>
-                    <div class="display__insights estrelas__mes">
-                        <h2>Classificação na mês</h2>
-                        <div>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph ph-star"></i>
-                        </div>
-                        <p class="display__info-insight">3,65</p>
-                    </div>
-    
-                    <div class="display__insights tabela">
-                        <div class="container_tabela">
-                            <table id="myTable" class="tablesorter" id="tabela">
-                                <thead>
-                                    <tr>
-                                        <th>Data</th>
-                                        <th>Dia da Semana</th>
-                                        <th>Peso</th>
-                                        <th>Fez exercício com peso?</th>
-                                        <th>Fez algum Aeróbio?</th>
-                                        <th>Ficou sem comer besteira?</th>
-                                        <th>Ficou sem tomar medicamentos?</th>
-                                        <th>Fechou circulos AppleWatch?</th>
-                                        <th>Bateu meta de sono?</th>
-                                        <th>Estrelas no dia</th>
-                                        <th>Treino do dia</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>08/08/2023</td>
-                                        <td>Terça-feira</td>
-                                        <td>89,00</td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td>2,50</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>09/08/2023</td>
-                                        <td>Quarta-feira</td>
-                                        <td>88,60</td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td><select name="q_exer_peso" id="q_exer_peso">
-                                            <option value="nao">Não</option>
-                                            <option value="sim">Sim</option>
-                                        </select></td>
-                                        <td>3,57</td>
-                                        <td>-</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                </div>
+            <div><a href="#">
+                <i class="ph-fill ph-barbell"></i><h3>Exercício Físico</h3></a>
             </div>
-            
-        </main>
+            <div><i class="ph-fill ph-bed"></i><h3>Qualidade do Sono</h3></div>
+            <div><i class="ph-fill ph-brain"></i><h3>Saúde Mental</h3></div>
+            <div><i class="ph-fill ph-cross"></i><h3>Saúde Espiritual</h3></div>
+            <div><i class="ph-fill ph-users-four"></i><h3>Convívio Social</h3></div>
+        </div>
     </div>
-
-
-
-
-    <!-- Linkando Tablesorter -->
-    <script>
-        $(document).ready(function() {
-          $(".tablesorter").tablesorter();
-        });
-    </script>
-
 </body>
 </html>

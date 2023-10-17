@@ -1,0 +1,138 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.titulo__pg{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--cor-branco);
+    border-radius: 1rem;
+
+}
+
+.log__window__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem 1rem; 
+}
+
+#log__data__anterior,
+#log__data__proximo {
+  border: 0;
+  background-color: transparent;
+  color: var(--cor-destaque);
+  cursor: pointer;
+}
+
+#log__data__anterior:active,
+#log__data__proximo:active {
+  color: var(--cor-escura);
+}
+
+#log__data__proximo:disabled {
+  color: gray;
+  pointer-events: none;
+  }
+
+#data {
+    color: var(--cor-destaque);
+    font-family: var(--fonte-principal);
+    border: 1px solid #dedede;
+    border-radius: 1rem;
+    padding: .5rem 20px;
+    cursor: pointer;
+}
+
+.log__window__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* flex-direction: column; */
+    background-color: var(--cor-bg);
+    border: 1px solid var(--cor-branco);
+    /* border-radius: .6rem .6rem 1rem 1rem; */
+    border-radius: 1rem;
+    padding: 1rem;
+
+    row-gap: 2rem;
+}
+
+.number-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    grid-column: 1/4;
+}
+
+.input__peso {
+    text-align: center;
+    width: 100px;
+    font-family: var(--fonte-principal);
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+
+#envia_log {
+    background-color: var(--cor-destaque);
+    border: 0;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: .5rem 20px;
+
+    color: var(--cor-branco);
+
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+#envia_log:active{
+    background-color: transparent;
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 20px;
+    padding: .5rem 20px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 1rem;
+    color: var(--cor-destaque);
+    line-height: 1.5;
+}
+
+h3 i{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    form {
+        align-items: center;
+    }
+    .log__window__header {
+        min-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        min-height: 92vh;
+    }
+}

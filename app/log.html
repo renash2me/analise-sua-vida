@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log de informações - Insights v2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- <script src="../js/data-hoje.js" defer></script> -->
+    <!-- <script src="../js/salva-localStorage.js" defer></script> -->
+    <!-- <script src="../js/le-localStorage.js" defer></script> -->
+    <script src="../js/verifica-localStorage.js" defer></script>
+</head>
+<body>
+    <main>
+
+        <h1 class="titulo__pg">Log de informações</h1>
+
+        <div class="log__window">
+
+        <form id="log-form">
+            <div class="form">
+                <div class="log__window__header">
+
+                    <button id="log__data__anterior"><i class="fa-solid fa-arrow-left"></i></button>
+                    
+                    <input type="date" id="data" max="" min="" />
+
+                    <button id="log__data__proximo"><i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="log__window__body">
+
+                    <div class="number-input">
+                        <p>Qual o seu peso?</p>
+                        <input
+                        class="input__peso"
+                        id="label-peso"
+                        type="number"
+                        step="0.01"
+                        name="peso"
+                        placeholder="88,15 kg"
+                        />
+                        <label
+                        class=""
+                        for="label-peso">
+                    </label>
+                    </div>
+
+                    <div class="checkbox-wrapper-8">
+                        <p>Fez exercício com peso?</p>
+                        <input
+                        class="tgl tgl-skewed"
+                        id="label-exercicio-peso"
+                        type="checkbox"
+                        name="exercicio-peso"
+                        />
+                        <label
+                        class="tgl-btn"
+                        data-tg-off="Não"
+                        data-tg-on="Sim"
+                        for="label-exercicio-peso">
+                    </label>
+                    </div>
+
+                    <div class="checkbox-wrapper-8">
+                        <p>Fez exercício aeróbio?</p>
+                        <input
+                        class="tgl tgl-skewed"
+                        id="label-exercicio-aerobio"
+                        type="checkbox"
+                        name="exercicio-aerobio"
+                        />
+                        <label
+                        class="tgl-btn"
+                        data-tg-off="Não"
+                        data-tg-on="Sim"
+                        for="label-exercicio-aerobio">
+                    </label>
+                    </div>
+
+                    <div class="checkbox-wrapper-8">
+                        <p>Ficou sem comer besteira?</p>
+                        <input
+                        class="tgl tgl-skewed"
+                        id="label-alimentacao"
+                        type="checkbox"
+                        name="alimentacao"
+                        />
+                        <label
+                        class="tgl-btn"
+                        data-tg-off="Não"
+                        data-tg-on="Sim"
+                        for="label-alimentacao">
+                    </label>
+                    </div>
+
+                    <div class="checkbox-wrapper-8">
+                        <p>Ficou sem tomar medicamento?</p>
+                        <input
+                        class="tgl tgl-skewed"
+                        id="label-medicamento"
+                        type="checkbox"
+                        name="medicamento"
+                        />
+                        <label
+                        class="tgl-btn"
+                        data-tg-off="Não"
+                        data-tg-on="Sim"
+                        for="label-medicamento">
+                    </label>
+                    </div>
+
+                    <div class="checkbox-wrapper-8">
+                        <p>Fechou os círculos do AppleWatch?</p>
+                        <input
+                        class="tgl tgl-skewed"
+                        id="label-applewatch"
+                        type="checkbox"
+                        name="applewatch"
+                        />
+                        <label
+                        class="tgl-btn"
+                        data-tg-off="Não"
+                        data-tg-on="Sim"
+                        for="label-applewatch">
+                    </label>
+                    </div>
+
+                    <div class="checkbox-wrapper-8">
+                        <p>Bateu meta de sono?</p>
+                        <input
+                        class="tgl tgl-skewed"
+                        id="label-sono"
+                        type="checkbox"
+                        name="sono"
+                        />
+                        <label
+                        class="tgl-btn"
+                        data-tg-off="Não"
+                        data-tg-on="Sim"
+                        for="label-sono">
+                    </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="envia_log" type="submit">Enviar log
+                <i class="fa-regular fa-paper-plane"></i>
+            </button>
+
+            <h3 id="log-registered-message">Log já registrado <i class="fa-solid fa-thumbs-up"></i></h3>
+
+
+        </form>
+
+        </div>
+
+    </main>
+
+    <!-- <div id="log-list">
+        Os registros salvos serão exibidos aqui
+    </div> -->
+
+</body>
+</html>
