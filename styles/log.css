@@ -116,10 +116,38 @@ h3 {
     border-radius: 1rem;
     color: var(--cor-destaque);
     line-height: 1.5;
+    text-align: center;
 }
 
 h3 i{
     margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        min-height: 92vh;
+    }
+
+    .log__window__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+
+    .number-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 100%;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -128,15 +156,5 @@ h3 i{
     }
     .log__window__header {
         min-width: 720px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    main {
-        min-height: 92vh;
-    }
-
-    .log__window__body {
-        grid-template-columns: 1fr;
     }
 }
