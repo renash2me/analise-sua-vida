@@ -19,8 +19,7 @@ form {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: var(--cor-branco);
-    border-radius: 1rem;
+
 
 }
 
@@ -52,10 +51,11 @@ form {
 #data {
     color: var(--cor-destaque);
     font-family: var(--fonte-principal);
-    border: 1px solid #dedede;
+    border: 1px solid var(--cor-destaque);
     border-radius: 1rem;
     padding: .5rem 20px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .log__window__body {
@@ -63,7 +63,7 @@ form {
     grid-template-columns: 1fr 1fr 1fr;
     /* flex-direction: column; */
     background-color: var(--cor-bg);
-    border: 1px solid var(--cor-branco);
+    border: 1px solid var(--cor-destaque);
     /* border-radius: .6rem .6rem 1rem 1rem; */
     border-radius: 1rem;
     padding: 1rem;
